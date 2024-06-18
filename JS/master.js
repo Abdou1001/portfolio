@@ -127,7 +127,12 @@ lis.forEach(li => {
     li.addEventListener("click", _=> {
 
         if (about.classList.contains("active-sec")){
-            numPercent.forEach(ele => percentFull(ele));
+            numPercent.forEach(ele => {
+                let goal = ele.dataset.percent;
+                if (+ele.textContent < +goal){
+                    percentFull(ele)
+                }
+            });
 
         }else{
             numPercent.forEach(ele => ele.textContent = 0);
@@ -142,7 +147,7 @@ function percentFull (ele){
     let count = setInterval(_ => {
         ele.textContent++
     
-        if(ele.textContent == goal){
+        if(+ele.textContent >= +goal){
             clearInterval(count)
         }
     },1500 / goal)
