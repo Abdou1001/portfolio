@@ -61,6 +61,68 @@ body
 
 /* End scroll style */
 
+/* ==== loader ==== */
+.content-loader{
+    width: 100svw;
+    height: 100dvb;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--main-color);
+    z-index: 100;
+}
+.loader {
+    width: 84px;
+    height: 84px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
+    z-index: 99;
+    border-radius: 50%;
+    background: #FFF;
+    transform: translate(-50%, 100%) scale(0);
+    animation: push 2s infinite ease-in;
+}
+
+.loader:after {
+    animation-delay: 1s;
+}
+
+@keyframes push {
+    0% {
+        transform: translate(-50%, 100%) scale(1);
+    }
+
+    15%,
+    25% {
+        transform: translate(-50%, 50%) scale(1);
+    }
+
+    50%,
+    75% {
+        transform: translate(-50%, -30%) scale(0.5);
+    }
+
+    80%,
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+/* ==== loader ==== */
+
 .section 
 {
     background-color: var(--bg-black-900);

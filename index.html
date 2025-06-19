@@ -17,6 +17,11 @@
     <title>Portfolio</title>
 </head>
 <body class="dark">
+    <!-- ==== loader ====  -->
+    <div class="content-loader">
+        <span class="loader"></span>
+    </div>
+    <!-- ==== loader ====  -->
     <!-- ==== Start main container ==== -->
     <div class="container">
         <!-- ==== Start Aside ==== -->
@@ -55,7 +60,7 @@
                     <div class="home-info">
                         <h3 class="text">Hello my name is <span>Abdulrahman Bin Saad</span></h3>
                         <h3 class="my-profession">I'm a <span class="typing"></span></h3>
-                        <p>I'm a Front-End Developer with extensive experience for over two years. expertise to creat website and make responsive website and more...</p>
+                        <p>I'm a Front-End Developer with extensive experience for over three years. expertise to create website and make responsive website and more...</p>
                         <a download href="img/CV.pdf" class="btn cv">Download CV</a>
                     </div>
                     <div class="img-home">
@@ -70,9 +75,9 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="about-content">
-                    <h3>I'm Abdulrahman Bin Saad and <span>Front-End Developer</span></h3>
+                    <h3>I'm Abdulrahman Bin Saad, <span>Front-End Developer</span></h3>
                     <p>
-                        I'm a Front-End Developer with extensive experience for over two years.<br>
+                        I'm a Front-End Developer with extensive experience for over three years.<br>
                         I use HTML 5, CSS 3, JavaScript, React.js, Bootstrap 5 and SASS. <br>
                         I committed to writing clean code, providing exceptional user experiences, and staying updated with industry trends for
                         innovative solutions.
@@ -87,7 +92,7 @@
                             </div>
                             <!-- info-item -->
                             <div class="info-item">
-                                <p>Age : <span>21</span></p>
+                                <p>Age : <span id="age"></span></p>
                             </div>
                             <!-- info-item -->
                             <div class="info-item">
@@ -120,37 +125,21 @@
                             <div class="skill-item">
                                 <h5>HTML</h5>
                                 <div class="progress">
-                                    <div class="progress-in" data-progress="85"></div>
-                                    <div class="skill-percent"><span data-percent="85">0</span>%</div>
+                                    <div class="progress-in" data-progress="92"></div>
+                                    <div class="skill-percent"><span data-percent="92">0</span>%</div>
                                 </div>
                             </div>
                             <!-- item -->
                             <div class="skill-item">
                                 <h5>CSS</h5>
                                 <div class="progress">
-                                    <div class="progress-in" data-progress="80"></div>
-                                    <div class="skill-percent"><span data-percent="80">0</span>%</div>
+                                    <div class="progress-in" data-progress="85"></div>
+                                    <div class="skill-percent"><span data-percent="85">0</span>%</div>
                                 </div>
                             </div>
                             <!-- item -->
                             <div class="skill-item">
                                 <h5>Bootstrap</h5>
-                                <div class="progress">
-                                    <div class="progress-in" data-progress="77"></div>
-                                    <div class="skill-percent"><span data-percent="77">0</span>%</div>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="skill-item">
-                                <h5>SASS</h5>
-                                <div class="progress">
-                                    <div class="progress-in" data-progress="70"></div>
-                                    <div class="skill-percent"><span data-percent="70">0</span>%</div>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="skill-item">
-                                <h5>JavaScript</h5>
                                 <div class="progress">
                                     <div class="progress-in" data-progress="79"></div>
                                     <div class="skill-percent"><span data-percent="79">0</span>%</div>
@@ -158,10 +147,26 @@
                             </div>
                             <!-- item -->
                             <div class="skill-item">
+                                <h5>SASS</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="73"></div>
+                                    <div class="skill-percent"><span data-percent="73">0</span>%</div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="skill-item">
+                                <h5>JavaScript</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="83"></div>
+                                    <div class="skill-percent"><span data-percent="83">0</span>%</div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="skill-item">
                                 <h5>React.js</h5>
                                 <div class="progress">
-                                    <div class="progress-in" data-progress="76"></div>
-                                    <div class="skill-percent"><span data-percent="76">0</span>%</div>
+                                    <div class="progress-in" data-progress="82"></div>
+                                    <div class="skill-percent"><span data-percent="82">0</span>%</div>
                                 </div>
                             </div>
                         </div>
@@ -206,10 +211,20 @@
                             <div class="box shadow-dark">
                                 <!-- item -->
                                 <div class="timeline">
+                                    <h3><i class="fa fa-calendar icon"></i> 2025</h3>
+                                    <h4>outPut Company</h4>
+                                    <p>
+                                        I worked at Output in Yemen as a front-end designer, where I developed user-friendly and responsive interfaces. I was
+                                        also responsible for solving UI and design issues on websites.
+                                    </p>
+                                </div>
+                                <!-- item -->
+                                <div class="timeline">
                                     <h3><i class="fa fa-calendar icon"></i> 2023</h3>
                                     <h4>freelancer</h4>
                                     <p>
-                                        I'm working as a freelancer in my area and on freelance websites such as freelencer.com and upwork.com
+                                        I have been working as a freelancer both locally and on international platforms such as Freelancer.com and Upwork.com,
+                                        delivering front-end solutions and website improvements for various clients.
                                     </p>
                                 </div>
                             </div>
@@ -304,7 +319,96 @@
                                 <div class="before">
                                     <i class="fa-solid fa-angles-left left"></i>
                                 </div>
-                                <a href="https://abdou1001.github.io/Sneakers-shop/" target="_blank"><img src="img/serv-G-1.png" alt="img" data-num="1"></a>
+                                <a href="https://abdou1001.github.io/Bahannan-Studio/website/page-contact.html" target="_blank"><img
+                                        src="img/serv-H-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Bahannan-Studio</p>
+                                <span><a href="https://abdou1001.github.io/Bahannan-Studio/website/page-contact.html" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/HTML_And_CSS_Template_Two/HTMl..html" target="_blank"><img
+                                        src="img/serv-C-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Kaspes</p>
+                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_Two/HTMl..html" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/HTML_And_CSS_Template_Three/" target="_blank"><img src="img/serv-B-1.png"
+                                        alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Abdou</p>
+                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_Three/" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/Snowy-Mountains-Website/" target="_blank"><img src="img/serv-I-1.png"
+                                        alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Snowy Mountains</p>
+                                <span><a href="https://abdou1001.github.io/Snowy-Mountains-Website/" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/Speical-Design/index.HTML" target="_blank"><img src="img/serv-A-1.png" alt="img" data-num="1"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Speical Design</p>
+                                <span><a href="https://abdou1001.github.io/Speical-Design/index.HTML" target="_blank">visit the website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/Sneakers-shop/" target="_blank"><img src="img/serv-G-1.png" alt="img"
+                                        data-num="1"></a>
                                 <div class="after">
                                     <i class="fa-solid fa-angles-right right"></i>
                                 </div>
@@ -312,6 +416,72 @@
                             <div class="info">
                                 <p class="name">Sneakers Shop</p>
                                 <span><a href="https://abdou1001.github.io/Sneakers-shop/" target="_blank">visit the website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/Login-Register-page/"><img src="img/serv-J-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Login Register page</p>
+                                <span><a href="https://abdou1001.github.io/Login-Register-page/" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/HTML_And_CSS_Template_one/HTML"><img src="img/serv-D-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Leon</p>
+                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_one/HTML" target="_blank">visit the
+                                        website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/Tic-Tac-Toe-Game/" target="_blank"><img src="img/serv-K-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Tic Tac Toe Game</p>
+                                <span><a href="https://abdou1001.github.io/Tic-Tac-Toe-Game/" target="_blank">visit the website</a></span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="port-item shadow-dark">
+                            <div class="img">
+                                <div class="before">
+                                    <i class="fa-solid fa-angles-left left"></i>
+                                </div>
+                                <a href="https://abdou1001.github.io/guess-word-game/" target="_blank"><img src="img/serv-E-1.png" alt="img"></a>
+                                <div class="after">
+                                    <i class="fa-solid fa-angles-right right"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="name">Name: Game guess the word</p>
+                                <span><a href="https://abdou1001.github.io/guess-word-game/" target="_blank">visit the website</a></span>
                             </div>
                         </div>
                         <!-- item -->
@@ -328,87 +498,6 @@
                             <div class="info">
                                 <p class="name">Responsive-Email-for-Al-Mas</p>
                                 <span><a href="https://abdou1001.github.io/Responsive-Email-for-Al-Mas/" target="_blank">visit the website</a></span>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="port-item shadow-dark">
-                            <div class="img">
-                                <div class="before">
-                                    <i class="fa-solid fa-angles-left left"></i>
-                                </div>
-                                <a href="https://abdou1001.github.io/Speical-Design/index.HTML" target="_blank"><img src="img/serv-A-1.png" alt="img" data-num="1"></a>
-                                <div class="after">
-                                    <i class="fa-solid fa-angles-right right"></i>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <p class="name">name: Speical Design</p>
-                                <span><a href="https://abdou1001.github.io/Speical-Design/index.HTML" target="_blank">visit the website</a></span>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="port-item shadow-dark">
-                            <div class="img">
-                                <div class="before">
-                                    <i class="fa-solid fa-angles-left left"></i>
-                                </div>
-                                <a href="https://abdou1001.github.io/HTML_And_CSS_Template_Three/" target="_blank"><img src="img/serv-B-1.png" alt="img"></a>
-                                <div class="after">
-                                    <i class="fa-solid fa-angles-right right"></i>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <p class="name">name: Abdou</p>
-                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_Three/" target="_blank">visit the website</a></span>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="port-item shadow-dark">
-                            <div class="img">
-                                <div class="before">
-                                    <i class="fa-solid fa-angles-left left"></i>
-                                </div>
-                                <a href="https://abdou1001.github.io/HTML_And_CSS_Template_Two/HTMl..html" target="_blank"><img src="img/serv-C-1.png" alt="img"></a>
-                                <div class="after">
-                                    <i class="fa-solid fa-angles-right right"></i>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <p class="name">name: Kaspes</p>
-                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_Two/HTMl..html" target="_blank">visit the website</a></span>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="port-item shadow-dark">
-                            <div class="img">
-                                <div class="before">
-                                    <i class="fa-solid fa-angles-left left"></i>
-                                </div>
-                                <img src="img/serv-D-1.png" alt="img">
-                                <div class="after">
-                                    <i class="fa-solid fa-angles-right right"></i>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <p class="name">name: Leon</p>
-                                <span><a href="https://abdou1001.github.io/HTML_And_CSS_Template_one/HTML" target="_blank">visit the
-                                        website</a></span>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="port-item shadow-dark">
-                            <div class="img">
-                                <div class="before">
-                                    <i class="fa-solid fa-angles-left left"></i>
-                                </div>
-                                <a href="https://abdou1001.github.io/guess-word-game/" target="_blank"><img src="img/serv-E-1.png" alt="img"></a>
-                                <div class="after">
-                                    <i class="fa-solid fa-angles-right right"></i>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <p class="name">name: Game guess the word</p>
-                                <span><a href="https://abdou1001.github.io/guess-word-game/" target="_blank">visit the website</a></span>
                             </div>
                         </div>
                     </div>
