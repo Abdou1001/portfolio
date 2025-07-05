@@ -3,12 +3,14 @@
 
 window.addEventListener("load", () => {
 	const loader = document.querySelector(".content-loader");
-
+	const content = document.querySelector(".container");
+	content.style.display = "none"
 	loader.style.opacity = 0;
+	content.style.display = "block"
 
 	setTimeout(() => {
 		loader.style.display = "none";
-	}, 500);
+	}, 200);
 });
 
 // ==== Aside ====
@@ -198,16 +200,16 @@ let after = document.querySelectorAll(`.portfolio .after`);
 before.forEach((ele, n) => {
 	ele.addEventListener("click", (_) => {
 		// number of photo
-		let currentIndex = imgPor[n].src.indexOf(".png") - 1;
+		let currentIndex = imgPor[n].src.indexOf(".webp") - 1;
 		// letter of photo
-		let currentLetter = imgPor[n].src.indexOf(".png") - 3;
+		let currentLetter = imgPor[n].src.indexOf(".webp") - 3;
 
 		// not go out of the range
 		if (imgPor[n].src[currentIndex] > 1) {
 			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-${--imgPor[n]
-				.src[currentIndex]}.png`;
+				.src[currentIndex]}.webp`;
 		} else {
-			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-5.png`;
+			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-5.webp`;
 		}
 	});
 });
@@ -216,16 +218,16 @@ before.forEach((ele, n) => {
 after.forEach((ele, n) => {
 	ele.addEventListener("click", (_) => {
 		// number of photo
-		let currentIndex = imgPor[n].src.indexOf(".png") - 1;
+		let currentIndex = imgPor[n].src.indexOf(".webp") - 1;
 		// letter of photo
-		let currentLetter = imgPor[n].src.indexOf(".png") - 3;
+		let currentLetter = imgPor[n].src.indexOf(".webp") - 3;
 
 		// not go out of the range
 		if (imgPor[n].src[currentIndex] < 5) {
 			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-${++imgPor[n]
-				.src[currentIndex]}.png`;
+				.src[currentIndex]}.webp`;
 		} else {
-			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-1.png`;
+			imgPor[n].src = `img/serv-${imgPor[n].src[currentLetter]}-1.webp`;
 		}
 	});
 });

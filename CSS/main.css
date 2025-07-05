@@ -32,6 +32,7 @@ body
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
     font-size: 16px;
+    overflow-x: hidden;
 }
 ::before,::after
 {
@@ -64,7 +65,7 @@ body
 /* ==== loader ==== */
 .content-loader{
     width: 100svw;
-    height: 100dvb;
+    height: 100vb;
     position: fixed;
     left: 0;
     right: 0;
@@ -73,7 +74,7 @@ body
     align-items: center;
     overflow: hidden;
     background-color: var(--main-color);
-    z-index: 100;
+    z-index: 999;
 }
 .loader {
     width: 84px;
@@ -90,7 +91,6 @@ body
     bottom: 0;
     width: 64px;
     height: 64px;
-    z-index: 99;
     border-radius: 50%;
     background: #FFF;
     transform: translate(-50%, 100%) scale(0);
@@ -420,10 +420,11 @@ body
 .container
 {
     height: 100vh;
+    overflow-x: hidden;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    
     .home-info
     {
         font-size: 20px;
@@ -907,12 +908,14 @@ body
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 30px;
+        overflow: hidden;
         text-align: center;
 
         .port-item
         {
             border: 6px solid var(--bg-black-100);
             border-radius: 10px;
+            box-shadow: 4px 6px 13px 0px rgba(255, 255, 255, 0.04);
             overflow: hidden;
             position: relative;
 
@@ -933,14 +936,14 @@ body
                 img
                 {
                     max-width: 100%;
-                    border-radius: 10px;
                 }
 
                 .before,
                 .after
                 {
-                    background-color: rgba(255, 255, 255, 0.4);
+                    background-color: rgba(255, 255, 255, 0.5);
                     padding: 5px 10px;
+                    border-radius: 7px;
                     font-size: 18px;
                     color: var(--main-color);
                     position: absolute;
@@ -975,15 +978,16 @@ body
                 
                 .name
                 {
-                    font-size: 19px;
+                    font-size: 17px;
                     margin-bottom: 5px;
                     text-transform: capitalize;
                 }
 
                 span a
                 {
-                    font-size: 18px;
-                    color: var(--main-color);
+                    font-size: 16px;
+                    color: white;
+                    text-decoration: underline;
                     margin-bottom: 5px;
                     text-transform: capitalize;
                 }
